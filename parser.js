@@ -15,8 +15,8 @@ var stats = {
     unmatched_readings: 0
 };
 
-//fs.readFile('data/turnstile_150627.csv','utf-8',function(err,data){
-fs.readFile('data/turnstile-test.csv','utf-8',function(err,data){   
+fs.readFile('data/turnstile_150627.csv','utf-8',function(err,data){
+//fs.readFile('data/turnstile-test.csv','utf-8',function(err,data){   
 
    data = csv.parse(data);
    
@@ -75,9 +75,9 @@ fs.readFile('data/turnstile-test.csv','utf-8',function(err,data){
                 var entries_difference = pair[0].ENTRIES - reading.ENTRIES;
             
                 if (entries_difference < 0) {
-                    stats.negative_readings += 1;
                     console.log ("Negative Entries:", pair[0]['C/A'], pair[0].UNIT, pair[0].SCP,pair[0].STATION,entries_difference);
-                    entries_difference = entries_difference * -1;   
+                    entries_difference = entries_difference * -1;
+                    stats.negative_readings += 1;
                 }
                 
                 if (entries_difference > 9999) {

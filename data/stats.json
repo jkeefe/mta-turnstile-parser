@@ -1,0 +1,5 @@
+{ am_readings: 29336,
+  pm_readings: 29354,
+  negative_readings: 625,
+  suspicious_values: 6,
+  unmatched_readings: 72 }
