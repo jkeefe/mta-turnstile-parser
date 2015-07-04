@@ -1,0 +1,4 @@
+station,lines,latitude,longitude,am_entries,am_exits,pm_entries,pm_exits,am_flow,pm_flow
+LEXINGTON AVE,NQR456,40.762796,-73.967686,23563,32922,65973,25914,out,in
+5 AVE-59 ST,NQR,40.764909,-73.973372,5157,32255,96107,30303,out,in
+57 ST-7 AVE,NQR,40.764755,-73.980646,31143,56770,117490,45238,out,in
